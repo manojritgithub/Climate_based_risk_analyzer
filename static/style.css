@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://i.ibb.co/2Z5w8D2/smog-texture.png') repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #00ff88;
+  text-shadow: 0 0 15px #00ff88, 0 0 30px #008844;
+  margin-bottom: 1.5rem;
+}
+
+.location-form {
+  margin-bottom: 2rem;
+}
+
+.location-form input {
+  padding: 0.8rem;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.location-form button {
+  padding: 0.8rem 1.2rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #00ff88;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.location-form button:hover {
+  background: #00cc66;
+  box-shadow: 0 0 20px #00ff88;
+}
+
+.risk-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.card.low {
+  background: rgba(0,255,136,0.1);
+  border: 2px solid #00ff88;
+  color: #00ff88;
+}
+
+.card.medium {
+  background: rgba(255,165,0,0.1);
+  border: 2px solid #ffa500;
+  color: #ffa500;
+}
+
+.card.high {
+  background: rgba(255,0,64,0.1);
+  border: 2px solid #ff0040;
+  color: #ff0040;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+canvas {
+  background: #111;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
